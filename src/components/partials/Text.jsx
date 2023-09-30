@@ -10,7 +10,8 @@ export default function Text({
       whileDrag={{
         scale: 1.2,
         boxShadow: '0px 0px 4px 4px rgba(0, 0, 0, 0.25)',
-        borderColor: '#646cff'
+        borderColor: '#646cff',
+        cursor: 'grabbing'
       }}
       dragConstraints={{
         top: -100,
@@ -26,7 +27,7 @@ export default function Text({
         fontWeight: 500,
         fontFamily: 'inherit',
         backgroundColor: '#1a1a1a',
-        cursor: 'help',
+        cursor: 'grab',
         transition: 'border-color 0.25s',
       }}
     >
