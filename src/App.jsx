@@ -9,6 +9,7 @@ import AbstractionThird from './components/pages/AbstractionThird';
 import Surprise from './components/pages/Surprise';
 import SurpriseContent from './components/pages/SurpriseContent';
 import SurpriseMain from './components/pages/SurpriseMain';
+import Closing from './components/pages/Closing';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/surprise' element={<Surprise key={'surprise'} />} />
           <Route path='/surprise-content' element={<SurpriseContent key={'surprise-content'} />} />
           <Route path='/surprise-main' element={<SurpriseMain key={'surprise-main'} />} />
+          <Route path='/closing' element={<Closing key={'closing'} />} />
         </Routes>
       </BrowserRouter>
     </ErrorBoundary>
