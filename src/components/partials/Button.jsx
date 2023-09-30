@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const buttonVariants = {
   hover: {
@@ -6,12 +7,29 @@ const buttonVariants = {
     transition: {
       duration: 0.4
     }
+  },
+  clicked: {
+    opacity: 0,
+    transition: {
+      duration: 0.2
+    }
   }
 };
 
 export default function Button({
-  content
+  content,
+  parentRef,
+  onClick,
 }) {
+  const handleClick = () => {
+    // Hide or remove the parent component
+    parentRef.current.style = 'none';
+    // OR
+    parentRef.current.remove();
+
+    onClick();
+  };
+
   return (
     <motion.button
       variants={buttonVariants}
@@ -20,6 +38,7 @@ export default function Button({
         display: 'flex',
         color: 'white'
       }}
+      onClick={handleClick}
     >
       {content ? content : ''}
     </motion.button>
