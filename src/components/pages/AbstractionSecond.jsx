@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
-export default function Abstraction() {
+export default function AbstractionSecond() {
   const [isVisible, setIsVisible] = useState(true);
   const navigate = useNavigate();
 
@@ -22,7 +22,7 @@ export default function Abstraction() {
   return (
     <section style={{ position: 'relative' }}>
       <Text
-        msg={'Hmmm....\nCoba jalan pelan-pelan aja deh 😖'}
+        msg={'Perasaan g enak nih 😶'}
       />
       <Button
         content='Jalan &nbsp;&nbsp; 🚶🏼‍♂️'
