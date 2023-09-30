@@ -2,29 +2,30 @@ import Text from '../partials/Text';
 import Button from '../partials/Button';
 import { useState, useRef } from 'react';
 
+import { useNavigate } from 'react-router-dom';
+
 export default function Intro() {
   const [isVisible, setIsVisible] = useState(true);
-  const ref = useRef();
+  const navigate = useNavigate();
 
   const handleClick = () => {
     setIsVisible(false);
+
+    // Navigate to next page
+    navigate('/abstraction');
   };
 
   if (!isVisible) {
-    return null;
+    return <>Done</>;
   }
 
   return (
-    <section
-      ref={ref}
-      style={{ position: 'relative' }}
-    >
+    <section style={{ position: 'relative' }}>
       <Text
         msg={'Lho, kok gelap disini ya ... ?'}
       />
       <Button
         content='Lanjut &nbsp;&nbsp; ▶'
-        parentRef={ref}
         onClick={handleClick}
       />
     </section>
