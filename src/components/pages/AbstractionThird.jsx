@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
-export default function AbstractionSecond() {
+export default function AbstractionThird() {
   const [isVisible, setIsVisible] = useState(true);
   const navigate = useNavigate();
 
@@ -12,7 +12,7 @@ export default function AbstractionSecond() {
     setIsVisible(false);
 
     // Navigate to next page
-    navigate('/abstraction-third');
+    navigate('/abstraction-second');
   };
 
   if (!isVisible) {
@@ -22,10 +22,10 @@ export default function AbstractionSecond() {
   return (
     <section style={{ position: 'relative' }}>
       <Text
-        msg={'Perasaan g enak nih 😶'}
+        msg={'Hidupin lampu lah ya biar terang 💡'}
       />
       <Button
-        content='Jalan &nbsp;&nbsp; 🚶🏼‍♂️'
+        content='Hidupkan &nbsp;&nbsp; 💡'
         onClick={handleClick}
       />
     </section>
