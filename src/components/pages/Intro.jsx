@@ -20,10 +20,10 @@ export default function Intro() {
       style={{ position: 'relative' }}
     >
       <Text
-        msg={'Check Check Check'}
+        msg={'Lho, kok gelap disini ya ... ?'}
       />
       <Button
-        content='Click'
+        content='Lanjut &nbsp;&nbsp; ▶'
         parentRef={ref}
         onClick={handleClick}
       />
