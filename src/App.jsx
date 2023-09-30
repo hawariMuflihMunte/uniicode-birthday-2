@@ -7,6 +7,7 @@ import Abstraction from './components/pages/Abstraction';
 import AbstractionSecond from './components/pages/AbstractionSecond';
 import AbstractionThird from './components/pages/AbstractionThird';
 import Surprise from './components/pages/Surprise';
+import SurpriseContent from './components/pages/SurpriseContent';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/abstraction-second' element={<AbstractionSecond key={'abstraction-second'} />} />
           <Route path='/abstraction-third' element={<AbstractionThird key={'abstraction-third'} />} />
           <Route path='/surprise' element={<Surprise key={'surprise'} />} />
+          <Route path='/surprise-content' element={<SurpriseContent key={'surprise-content'} />} />
         </Routes>
       </BrowserRouter>
     </ErrorBoundary>
