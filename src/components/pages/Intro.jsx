@@ -1,6 +1,6 @@
 import Text from '../partials/Text';
 import Button from '../partials/Button';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
