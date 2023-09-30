@@ -12,7 +12,7 @@ export default function AbstractionThird() {
     setIsVisible(false);
 
     // Navigate to next page
-    navigate('/abstraction-second');
+    navigate('/surprise');
   };
 
   if (!isVisible) {
